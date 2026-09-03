@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type = "image/png" href="https://favicon-shop.creator-spring.com/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Walmort</title>
+    <title>Walmort</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Sales Walmort</div>
+            <div class="logo">Walmort</div>
             <ul class="nav-links">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#products">Productos</a></li>
                 <li><a href="#contact">Contacto</a></li>
+                <li><a href ="registro.html" class="active">Registro</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1>Bienvenido a Sales Walmort</h1>
+            <h1>Bienvenido a Walmort</h1>
             <p>Los mejores productos al mejor precio</p>
         </section>
 
         <section id="products" class="products">
             <h2>Nuestros Productos</h2>
             <div class="product-grid">
-                <div class="product-card">
-                    <h3>Producto 1</h3>
-                    <p>$99.99</p>
-                    <button class="btn btn-primary" onclick="addToCart('Producto 1')">Agregar al carrito</button>
-                </div>
-                <div class="product-card">
-                    <h3>Producto 2</h3>
-                    <p>$149.99</p>
-                    <button class="btn btn-primary" onclick="addToCart('Producto 2')">Agregar al carrito</button>
-                </div>
-                <div class="product-card">
-                    <h3>Producto 3</h3>
-                    <p>$199.99</p>
-                    <button class="btn btn-primary" onclick="addToCart('Producto 3')">Agregar al carrito</button>
-                </div>
+                <article class="product-card">
+                    <img src = "https://bechef.cl/wp-content/uploads/2023/10/Diseno-sin-titulo-5.png" class= "foto_producto" alt="img charqui" >
+                    <h3>Charqui</h3>
+                    <p>$2.950</p>
+                    <button class="btn btn-primary" onclick="addToCart('Charqui')">Agregar al carrito</button>
+                </article>
+                <article class="product-card">
+                    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqy7Kf6Q0RTzY_iXCgOrq-qxAx8YJUtgj8-knEm0xQdw&s=10" class= "foto_producto" alt="img salAhumada" >
+                    <h3>Sal Ahumada</h3>
+                    <p>$1.990</p>
+                    <button class="btn btn-primary" onclick="addToCart('Sal Ahumada')">Agregar al carrito</button>
+                </article>
+                <article class="product-card">
+                    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8Y4CPSpdWJ3d8eem_uYsoFH0mOt3HvNa1t151Jm51g&s=10" class= "foto_producto" alt="img lomo vet" >
+                    <h3>Lomo Vetado 3kg</h3>
+                    <p>$73.940</p>
+                    <button class="btn btn-primary" onclick="addToCart('Lomo Vetado')">Agregar al carrito</button>
+                </article>
             </div>
+        </section>
+        <section id ="videoSucursal" class="product-video">
+            <h3>Conoce nuestra tienda!</h3>
+            <div class ="video-container">
+                <iframe width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/NONVl_7D_PQ?si=9kEYtpb9SftQFCkb"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Sucursal Alameda #123</p>
         </section>
 
         <section id="contact" class="contact">
@@ -56,9 +71,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Sales Walmart. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Walmart. Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>

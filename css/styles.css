@@ -1,0 +1,23 @@
+/* Segundo, dejamos que la imagen ocupe el 100% de ese nuevo tamaño pequeño */
+.foto_producto {
+    width: 100%;         /* Ocupará los 200px de la tarjeta */
+    height: 150px;       /* Altura uniforme para todas las fotos */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+/* Primero, achicamos la tarjeta */
+.product-card {
+    max-width: 200px;    /* La tarjeta no medirá más de 200px de ancho */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;  /* Centra el texto y el botón */
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minimax(200px,1fr));
+    gap:20px;
+    padding: 20px;
+}
