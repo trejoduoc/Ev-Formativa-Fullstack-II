@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Walmort</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sales Walmort</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Bienvenido a Sales Walmort</h1>
+            <p>Los mejores productos al mejor precio</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Producto 1</h3>
+                    <p>$99.99</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 1')">Agregar al carrito</button>
+                </div>
+                <div class="product-card">
+                    <h3>Producto 2</h3>
+                    <p>$149.99</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 2')">Agregar al carrito</button>
+                </div>
+                <div class="product-card">
+                    <h3>Producto 3</h3>
+                    <p>$199.99</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 3')">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <button class="btn btn-secondary" onclick="showContact()">Mostrar información</button>
+            <div id="contact-info" style="display:none;">
+                <p>Email: ventas@walmort.com</p>
+                <p>Teléfono: +1-800-123-4567</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sales Walmart. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
